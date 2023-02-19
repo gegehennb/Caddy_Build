@@ -55,6 +55,8 @@ jobs:
       run: |
         mkdir release-ready
         cd ./release-tmp
+        chgrp -R root caddy && chown -R root caddy
+        chmod 755 caddy
         tar -zcvf ../release-ready/caddy-${{ matrix.config.name }}.tar.gz *
 
     - name: Upload a Build Artifact
