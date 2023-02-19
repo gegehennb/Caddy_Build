@@ -70,4 +70,5 @@ jobs:
         repo_token: ${{ secrets.ACCESS_TOKEN }}
         file: ./release-ready/caddy-${{ matrix.config.name }}.tar.gz
         tag: ${{ github.ref }}
+        release_name: Caddy
         overwrite: true
