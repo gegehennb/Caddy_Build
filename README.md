@@ -1,7 +1,9 @@
-## Download
+## Download amd64
 
 ```bash
-wget -P /usr/local/bin/ https://github.com/gegehennb/CN_Build/releases/download/main/caddy-linux-amd64.tar.gz # amd64
+wget -P /usr/local/bin/ https://github.com/gegehennb/CN_Build/releases/download/main/caddy-linux-amd64.tar.gz && tar -xf /usr/local/bin/caddy-linux-amd64.tar.gz
 
-wget -P /usr/local/bin/ https://github.com/gegehennb/CN_Build/releases/download/main/caddy-linux-arm64.tar.gz # arm64
+## Download arm64
+
+wget -P /usr/local/bin/ https://github.com/gegehennb/CN_Build/releases/download/main/caddy-linux-arm64.tar.gz && tar -xf /usr/local/bin/caddy-linux-arm64.tar.gz
 ```
