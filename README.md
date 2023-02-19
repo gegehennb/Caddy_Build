@@ -5,5 +5,6 @@ wget -P /usr/local/bin/ https://github.com/gegehennb/CN_Build/releases/download/
 
 ## Download arm64
 
+```bash
 wget -P /usr/local/bin/ https://github.com/gegehennb/CN_Build/releases/download/main/caddy-linux-arm64.tar.gz && tar -xf /usr/local/bin/caddy-linux-arm64.tar.gz
 ```
