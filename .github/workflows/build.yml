@@ -60,7 +60,7 @@ jobs:
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: caddy-${{ github.sha }}-${{ matrix.config.name }}
+        name: caddy-${{ matrix.config.name }}
         path: ./release-ready/*
         
     - name: Upload to GitHub Release for Linux
