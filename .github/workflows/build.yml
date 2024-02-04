@@ -34,9 +34,9 @@ jobs:
       uses: actions/checkout@v3
 
     - name: Install go
-      uses: actions/setup-go@v4
+      uses: actions/setup-go@v3
       with:
-        go-version: '1.20'
+        go-version: '1.21'
         check-latest: true
     
     - name: Install xcaddy
@@ -48,7 +48,7 @@ jobs:
         export GOARCH=${{ matrix.config.GOARCH }} 
         export GOOS=${{ matrix.config.GOOS }} 
         ~/go/bin/xcaddy build \
-          --with github.com/caddyserver/forwardproxy@caddy2=github.com/klzgrad/forwardproxy@naive \
+          --with github.com/caddy-dns/cloudflare \
           --output ./release-tmp/caddy
         
     - name: Generate tar for Linux
