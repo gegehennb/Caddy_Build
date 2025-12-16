@@ -36,7 +36,7 @@ jobs:
     - name: Install go
       uses: actions/setup-go@v5
       with:
-        go-version: '1.24'
+        go-version: '1.25'
         check-latest: true
     
     - name: Install xcaddy
@@ -48,6 +48,7 @@ jobs:
         export GOARCH=${{ matrix.config.GOARCH }} 
         export GOOS=${{ matrix.config.GOOS }} 
         ~/go/bin/xcaddy build \
+          --with github.com/caddyserver/forwardproxy=github.com/klzgrad/forwardproxy@naive \
           --with github.com/caddy-dns/cloudflare \
           --output ./release-tmp/caddy
         
