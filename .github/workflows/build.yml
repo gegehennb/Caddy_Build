@@ -50,6 +50,7 @@ jobs:
         ~/go/bin/xcaddy build \
           --with github.com/caddyserver/forwardproxy=github.com/klzgrad/forwardproxy@naive \
           --with github.com/caddy-dns/cloudflare \
+          --with github.com/mholt/caddy-l4 \
           --output ./release-tmp/caddy
         
     - name: Generate tar for Linux
